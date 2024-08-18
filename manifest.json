@@ -1,0 +1,61 @@
+{
+    "content_scripts": [
+        {
+            "js": ["content.js"],
+            "matches": [
+                "https://*.youtube.com/*",
+                "https://*.pornhub.com/*",
+                "https://*.xvideos.com/*",
+                "https://*.xnxx.com/*",
+                "https://*.redtube.com/*",
+                "https://*.youporn.com/*",
+                "https://*.tube8.com/*",
+                "https://*.xhamster.com/*",
+                "https://*.spankbang.com/*",
+                "https://*.porn.com/*",
+                "https://*.keezmovies.com/*",
+                "https://*.eporner.com/*",
+                "https://*.sunporno.com/*",
+                "https://*.fapdu.com/*",
+                "https://*.beeg.com/*",
+                "https://*.grabify.link/*",
+                "https://*.blasze.com/*",
+                "https://*.yip.su/*",
+                "https://*.iplogger.org/*",
+                "https://*.2no.co/*",
+                "https://*.iplogger.com/*",
+                "https://*.iplis.ru/*",
+                "https://*.ipgrabber.ru/*",
+                "https://*.ipgraber.ru/*",
+                "https://*.gyazo.nl/*",
+                "https://*.yourstalker.co/*",
+                "https://*.gyazos.com/*",
+                "https://*.webresolver.nl/*",
+                "https://*.ps3cfw.com/*",
+                "https://*.bmwforum.co/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "name": "Happy Life",
+    "version": "1.0",
+    "description": "A Happy Life.",
+    "manifest_version": 3,
+    "web_accessible_resources": [
+        {
+            "resources": ["warn/warn.html"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
